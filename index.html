@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Портфолио — Смагин Авдей</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="logo" href="#home">Смагин Авдей</a>
+    <button class="nav-toggle" aria-label="open menu">☰</button>
+    <ul class="nav-list">
+      <li><a href="#home">Главная</a></li>
+      <li><a href="#about">Обо мне</a></li>
+      <li><a href="#portfolio">Портфолио</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="section hero">
+    <div class="hero-inner">
+      <div class="photo-card">
+        <img src="photo.png" alt="Фото" class="portrait">
+      </div>
+      <div class="intro">
+        <h1>Привет — я Смагин Авдей</h1>
+        <p class="lead">Я создаю аккуратные, доступные и адаптивные веб-интерфейсы. Этот сайт — пример выполненного задания по созданию сайта-визитки/портфолио с ручной доработкой шаблона: навигация, галерея, форма обратной связи и адаптивная графика (SVG).</p>
+        <a class="btn" href="#portfolio">Посмотреть работы</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>Обо мне</h2>
+    <p>Меня зовут <strong>Смагин Авдей</strong>. Я начинающий веб-разработчик, изучающий создание сайтов с нуля на HTML, CSS и JavaScript. Умею верстать адаптивные страницы, работать с изображениями, формами и навигацией. Постоянно развиваю навыки, выполняю учебные и практические проекты, стремлюсь к аккуратному коду и понятному дизайну.</p>
+    <p>Технологии: HTML5, CSS3 (Flexbox, Grid), JavaScript для интерактивности. В работе использую SVG-иконки и оптимизированные изображения. Готов к сотрудничеству и выполнению заказов любой сложности — от лэндингов до небольших SPA.</p>
+
+    <div class="svg-icon" aria-hidden="true">
+      <svg width="120" height="120" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+        <title>Иконка — адаптивная SVG</title>
+        <rect x="1" y="1" width="22" height="22" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M6 12h12M6 8h12M6 16h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <h2>Портфолио</h2>
+    <p>Ниже представлены мои учебные и практические проекты:</p>
+    <div class="gallery">
+      <figure><img src="proj-1.svg" alt="Работа 1"><figcaption>Лендинг для кофейни (HTML + CSS)</figcaption></figure>
+      <figure><img src="proj-2.svg" alt="Работа 2"><figcaption>Сайт-визитка частного мастера</figcaption></figure>
+      <figure><img src="proj-3.svg" alt="Работа 3"><figcaption>Портфолио веб-разработчика</figcaption></figure>
+      <figure><img src="proj-4.svg" alt="Работа 4"><figcaption>Учебный сайт по Flexbox и Grid</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <h2>Контакты</h2>
+    <p>Связаться со мной можно по телефону и email: <a href="tel:+79236257837">+7 (923) 625-7837</a>, <a href="mailto:smagn2007@list.ru">smagn2007@list.ru</a>.</p>
+
+    <form id="contactForm" novalidate>
+      <label>Имя<br><input type="text" name="name" id="name" required placeholder="Ваше имя"></label>
+      <label>Email<br><input type="email" name="email" id="email" required placeholder="email@пример.ru"></label>
+      <label>Сообщение<br><textarea name="message" id="message" rows="4" required placeholder="Короткое сообщение"></textarea></label>
+      <div class="form-actions">
+        <button type="submit" class="btn">Отправить</button>
+      </div>
+      <p id="formResult" role="status" aria-live="polite"></p>
+    </form>
+
+    <p>QR-код для быстрого перехода:</p>
+    <img src="qr.png" alt="QR-код сайта" class="qr">
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© Смагин Авдей, <span id="year">2025</span>. Все права защищены.</p>
+    <p class="socials">
+      <a href="https://t.me/xealin" aria-label="Telegram">Telegram</a> · <a href="https://vk.com/smaginavdey" aria-label="VK">VK</a>
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

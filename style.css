@@ -1,0 +1,47 @@
+
+:root{
+  --max-width:1100px;
+  --accent:#0b63d6;
+  --bg:#f8f9fb;
+  --text:#1b1b1b;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; color:var(--text); background:var(--bg); line-height:1.45}
+header{background:#fff; box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.nav{max-width:var(--max-width); margin:0 auto; display:flex; align-items:center; gap:12px; padding:12px; justify-content:space-between}
+.logo{font-weight:700; color:var(--accent); text-decoration:none}
+.nav-list{list-style:none; display:flex; gap:12px; margin:0; padding:0}
+.nav-list a{color:var(--text); text-decoration:none; padding:6px 8px; border-radius:6px}
+.nav-list a:hover{background:#eef6ff}
+.nav-toggle{display:none; background:none; border:0; font-size:20px}
+
+.section{max-width:var(--max-width); margin:32px auto; padding:16px}
+.hero-inner{display:flex; gap:20px; align-items:center}
+.photo-card{flex:0 0 180px}
+.portrait{width:180px; height:180px; object-fit:cover; border-radius:10px; display:block; border:4px solid #fff; box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+.intro .lead{max-width:650px}
+.btn{display:inline-block; background:var(--accent); color:#fff; padding:10px 14px; border-radius:8px; text-decoration:none; margin-top:12px}
+
+.gallery{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
+.gallery img{width:100%; display:block; border-radius:8px; height:160px; object-fit:cover}
+.gallery figure{margin:0; background:#fff; padding:8px; border-radius:8px; box-shadow:0 4px 14px rgba(9,30,66,0.04)}
+
+form{max-width:560px; background:#fff; padding:12px; border-radius:8px; box-shadow:0 6px 20px rgba(2,6,23,0.06)}
+form label{display:block; margin-bottom:8px; font-size:14px}
+input[type="text"], input[type="email"], textarea{width:100%; padding:8px; border-radius:6px; border:1px solid #ddd}
+.form-actions{margin-top:8px}
+#formResult{margin-top:8px; font-size:14px}
+
+.site-footer{background:#fff; padding:16px; border-top:1px solid #eee}
+.footer-inner{max-width:var(--max-width); margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:12px; font-size:14px}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-inner{flex-direction:column; align-items:flex-start}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+  .nav-list{display:none}
+  .nav-toggle{display:block}
+  .gallery{grid-template-columns:1fr}
+}
